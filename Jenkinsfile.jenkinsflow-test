@@ -1,3 +1,5 @@
 node {
-    echo "Hi"
+    sh "echo Hi \$(date --iso-8601)"
+    sleep 10
+    sh "echo Bye \$(date --iso-8601)"
 }
